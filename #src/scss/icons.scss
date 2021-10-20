@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'icons';
+    src:  url('../fonts/icons.eot?iz9tlb');
+    src:  url('../fonts/icons.eot?iz9tlb#iefix') format('embedded-opentype'),
+      url('../fonts/icons.ttf?iz9tlb') format('truetype'),
+      url('../fonts/icons.woff?iz9tlb') format('woff'),
+      url('../fonts/icons.svg?iz9tlb#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-"], [class*=" _icon-"] {
+    font-family: 'icons' !important;
+    // speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-fb:before {
+    content: "\e900";
+  }
+  ._icon-insta:before {
+    content: "\e901";
+  }
+  ._icon-pinter:before {
+    content: "\e902";
+  }
+  
