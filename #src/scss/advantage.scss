@@ -22,10 +22,13 @@
         align-items: flex-start;
         line-height: 130%;
         font-size: 14px;
-        span {
+        a {
             font-weight: 300;
             text-decoration-line: underline;
             color: #FF0000;
+            &:hover {
+                text-decoration-line: none;
+            }
         }
     }
 }

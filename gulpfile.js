@@ -14,7 +14,7 @@ let path = {
     src: {
         html: [source_folder + '/*.html', '!' + source_folder + '/_*.html'],
         css: source_folder + '/scss/style.scss',
-        js: source_folder + '/js/script.js',
+        js: source_folder + '/js/*.js',
         img: source_folder + '/img/**/*.+(png|jpg|gif|ico|svg|webp)',
         fonts: source_folder + '/fonts/*.ttf',
     },
