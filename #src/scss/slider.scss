@@ -37,7 +37,7 @@
 .slick-dots li button{}
 
 .slider {
-    padding: 108px 0px 50px 0px;
+    padding: 108px 0px 107px 0px;
     .slider__body {
         position: relative;
         overflow: hidden;
@@ -82,7 +82,7 @@
         }
         .slick-active {
             button {
-                background-color: $redColor;
+                background-color: $secondColor;
             }
         }
     }
