@@ -2,26 +2,54 @@
     padding: 100px 0px;
     background: url(/img/bg2.png) center center / cover no-repeat;
     min-height: 680px;
+    @media (max-width:$md2) {
+        padding: 60px 0px;
+        min-height: auto;
+    }
+    @media (max-width:$md3) {
+        padding: 40px 0px;
+    }
     &__block {
         max-width: 800px;
+        @media (max-width:$md4) {
+            text-align: center;
+        }
     }
     &__title {
         font-weight: 700;
         font-size: 36px;
-        line-height: 54px;
+        line-height: 130%;
         text-transform: uppercase;
         color: #FFFFFF;
+        @media (max-width:$md2) {
+            font-size: 28px;
+        }
+        @media (max-width:$md3) {
+            font-size: 26px;
+        }
+        @media (max-width:$md4) {
+            font-size: 20px;
+        }
     }
     &__subtitle {
         font-weight: 300;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 130%;
         color: #FFFFFF;
+        @media (max-width:$md3) {
+            margin-top: 15px;
+        }
+        @media (max-width:$md4) {
+            font-size: 18px;
+        }
     }
     &__btn {
         width: 100%;
         height: 55px;
         margin-top: 8px;
+        @media (max-width:$md4) {
+            height: 40px;
+        }
     }
 }
 
@@ -30,6 +58,10 @@
     flex-direction: column;
     margin-top: 36px;
     max-width: 303px;
+    @media (max-width:$md4) {;
+        margin: 0 auto;
+        margin-top: 36px;
+    }
     input {
         width: 100%;
         height: 50px;
@@ -38,6 +70,9 @@
         padding: 0px 21px;
         &:not(:last-child) {
             margin-bottom: 11px;
+        }
+        @media (max-width:$md4) {
+            height: 40px;
         }
     }
 }

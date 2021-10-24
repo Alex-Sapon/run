@@ -2,40 +2,83 @@
     min-height: 650px;
     background: url(../img/bg.jpg) center center / cover no-repeat;
     padding: 0px 0px 93px 0px;
+    @media (max-width:$md3) {
+        min-height: 590px;
+        padding: 0 0 50px 0;
+    }
     &__block {
         max-width: 530px;
         margin-left: auto;
         text-align: right;
         color: #FFFFFF;
         margin-top: 70px;
+        @media (max-width:$md3) {
+            margin-top: 50px;
+        }
+        @media (max-width:$md4) {
+            margin-top: 30px;
+            max-width: 100%;
+            text-align: center;
+        }
     }
     &__title {
         font-weight: 700;
         font-size: 42px;
         text-transform: uppercase;
+        @media (max-width:$md3) {
+            font-size: 35px;
+        }
+        @media (max-width:$md4) {
+            font-size: 24px;
+            line-height: 120%;
+        }
     }
     &__subtitle {
         font-weight: 500;
         font-size: 24px;
         text-transform: uppercase;
         margin-top: 17px;
+        @media (max-width:$md3) {
+            font-size: 25px;
+            line-height: 130%;
+        }
+        @media (max-width:$md4) {
+            font-size: 18px;
+            line-height: 150%;
+        }
     }
     &__info {
         margin-top: 60px;
         padding-right: 23px;
         max-width: 424px;
         margin-left: auto;
+        @media (max-width:$md3) {
+            margin-top: 50px;
+        }
+        @media (max-width:$md4) {
+            margin-top: 40px;
+            padding-right: 0;
+        }
     }
     &__btn {
         margin-top: 65px;
         width: 300px;
         height: 50px;
+        @media (max-width:$md4) {
+            margin-top: 45px;
+            width: 244px;
+            height: 44px;
+            font-size: 15px;
+        }
     }
     &__catalogue {
         margin-top: 12px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        @media (max-width:$md4) {
+            justify-content: center;
+        }
     }
     &__link {
         color: inherit;

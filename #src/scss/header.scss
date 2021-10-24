@@ -1,14 +1,29 @@
 .header {
     padding: 21px 0px;
+    @media (max-width:$md4) {
+        padding-bottom: 10px;
+    }
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width:$md4) {
+            flex-direction: column;
+        }
     }
     &__logo {
         max-width: 250px;
         img {
             width: 100%;
+        }
+        @media (max-width:$md3) {
+            flex: 0 0 50%;
+        }
+        @media (max-width:$md4) {
+            flex: 0 0 100%;
+            max-width: 240px;
+            margin-bottom: 20px;
         }
     }
     &__official {
@@ -16,6 +31,15 @@
         font-size: 12px;
         text-align: center;
         color: #FFFFFF;
+        @media (max-width:$md3) {
+            flex: 0 0 50%;
+            text-align: right;
+        }
+        @media (max-width:$md4) {
+            flex: 0 0 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
         span {
             display: block;
             font-family: $fontFamilyMM;
@@ -23,6 +47,12 @@
             font-size: 18px;
             line-height: 29px;
             text-align: center;
+            @media (max-width:$md3) {
+                text-align: right;
+            }
+            @media (max-width:$md4) {
+                text-align: center;
+            }
         }
     }
     &__contacts {
@@ -30,6 +60,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
+        @media (max-width:$md3) {
+            flex: 0 0 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        @media (max-width:$md4) {
+            margin-top: 0px;
+        }
     }
 
     &__tel {
@@ -40,6 +80,12 @@
         &:hover {
             color: $secondColor;
         }
+        @media (max-width:$md3) {
+            margin-right: 25px;
+        }
+        @media (max-width:$md4) {
+            font-size: 15px;
+        }
     }
 
     &__btn {
@@ -47,6 +93,16 @@
         width: 153px;
         height: 32px;
         margin-top: 8px;
+        @media (max-width:$md3) {
+            margin-top: 0;
+        }
+        @media (max-width:$md4) {
+            width: 130px;
+            height: 29px;
+            font-size: 11px;
+            margin-top: 0;
+        }
     }
+    
 }
 

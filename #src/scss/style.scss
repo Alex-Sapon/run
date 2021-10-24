@@ -57,6 +57,12 @@ body {
     text-align: center;
     color: #0D0D0D;
     text-transform: uppercase;
+    @media (max-width:$md3) {
+        font-size: 26px;
+    }
+    @media (max-width:$md4) {
+        font-size: 24px;
+    }
 }
 
 // Основная сетка ====================================================================
