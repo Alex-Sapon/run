@@ -1,0 +1,55 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.56);
+    display: none;
+}
+
+.modal {
+    width: 382px;
+    max-height: 402px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F2F2F2;
+    padding: 35px 40px 40px 40px;
+    &__close {
+        position: absolute;
+        right: -36px;
+        top: 0;
+        font-size: 34px;
+        line-height: 16px;
+        color: $secondColor;
+        cursor: pointer;
+        @media (max-width:$md4) {
+            right: -26px;
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+    }
+    &__desc {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    @media (max-width:$md4) {
+        width: 75%;
+        padding: 35px 20px 40px 20px;
+    }
+}
+
+#consultation,
+#order,
+#thanks {
+    display: none;
+}

@@ -49,6 +49,11 @@ body {
             color: $secondColor;
             background-color: #FFFFFF;
         }
+    &_border {
+        &:hover {
+            border: 1px solid $secondColor;
+        }
+    }
 }
 
 .title {
@@ -81,3 +86,4 @@ body {
 @import 'catalog';
 @import 'reviews';
 @import 'footer';
+@import 'modal';
