@@ -1,0 +1,60 @@
+.footer {
+    min-height: 630px;
+    position: relative;
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 460px;
+        height: 270px;
+        background-color: $secondColor;
+        padding: 50px 53px 56px 53px;
+        @media (max-width:$md4) {
+            padding: 35px 20px 35px 20px;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+        font-style: normal;
+    }
+    &__phone {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        display: block;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 36px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+    }
+    &__link {
+        width: 53px;
+        height: 53px;
+        border-radius: 100%;
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        margin: 0px 14px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: #fff;
+            color: $secondColor;
+        }
+    }
+}
