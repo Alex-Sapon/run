@@ -58,7 +58,7 @@
     flex-direction: column;
     margin-top: 36px;
     max-width: 303px;
-    @media (max-width:$md4) {;
+    @media (max-width:$md4) {
         margin: 0 auto;
         margin-top: 36px;
     }
@@ -77,6 +77,14 @@
     }
     &_mt26 {
         margin-top: 26px;
+    }
+    .error {
+        margin-bottom: 10px;
+        border: solid 1px $secondColor;
+    }
+    label.error {
+        border: none;
+        color: #FFFFFF;
     }
 }
     
