@@ -1,6 +1,6 @@
 .consultation {
     padding: 100px 0px;
-    background: url(/img/bg2.png) center center / cover no-repeat;
+    background: url(../img/bg2.png) center center / cover no-repeat;
     min-height: 680px;
     @media (max-width:$md2) {
         padding: 60px 0px;
@@ -51,6 +51,9 @@
             height: 40px;
         }
     }
+    label.error {
+        color: #FFFFFF;
+    }
 }
 
 .form {
@@ -84,7 +87,6 @@
     }
     label.error {
         border: none;
-        color: #FFFFFF;
     }
 }
     

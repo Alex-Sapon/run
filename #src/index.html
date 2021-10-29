@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   @@include('_head.html',{
     'title':'Главная'
   })
 <body>
   <main class="wrapper">
-    <section class="promo">
+    <section class="promo" id="up">
       <div class="_container">
         @@include('_header.html',{})
         <div class="promo__block">
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="advantage__item">
-            <img src="img/heart.png" alt="heart">
+            <img src="img/heart.png" alt="heart" class="advantage__item_heart-animated">
             <div class="advantage__title">Заботимся о здоровье</div>
             <div class="advantage__text">
               Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -71,14 +71,14 @@
         </div>
         <form action="#" class="form" id="consultation-form">
           <input placeholder="Ваше имя" type="text" name="name">
-          <input placeholder="Ваш телефон" name="phone">
+          <input placeholder="Ваш телефон" type="tel" name="phone">
           <input placeholder="Ваш E-mail" type="email" name="email">
           <button class="consultation__btn btn" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
       </div>
     </section>
 
-    <section class="slider">
+    <div class="slider">
       <div class="_container">
         <div class="slider__body">
           <div class="slider__item"><img src="img/slide_1.png" alt="image"></div>
@@ -86,7 +86,7 @@
           <div class="slider__item"><img src="img/slide_3.png" alt="image"></div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section class="catalog">
       <div class="_container">
@@ -498,7 +498,7 @@
       <div class="_container">
         <h2 class="title">отзывы клиентов</h2>
         <div class="reviews__wrapper">
-          <div class="reviews__block">
+          <div class="reviews__block wow animate__animated animate__fadeInLeft">
             <img src="img/user_1.png" alt="img-user" class="reviews__img">
             <div class="reviews__content">
               <div class="reviews__title">Ирина Иванченко</div>
@@ -508,7 +508,7 @@
               </div>
             </div>
           </div>
-          <div class="reviews__block">
+          <div class="reviews__block wow animate__animated animate__fadeInRight">
             <img src="img/user_2.png" alt="img-user" class="reviews__img">
             <div class="reviews__content">
               <div class="reviews__title">Иван Сёмочкин</div>
@@ -518,7 +518,7 @@
               </div>
             </div>
           </div>
-          <div class="reviews__block">
+          <div class="reviews__block wow animate__animated animate__fadeInLeft">
             <img src="img/user_3.png" alt="img-user" class="reviews__img">
             <div class="reviews__content">
               <div class="reviews__title">Юлия Дашкина</div>
@@ -540,7 +540,7 @@
         <div class="modal__desc">и мы перезвоним вам в течении 10 минут</div>
         <form action="#" class="form form_mt26">
           <input placeholder="Ваше имя" type="text" name="name">
-          <input placeholder="Ваш телефон" name="phone">
+          <input placeholder="Ваш телефон" type="tel" name="phone">
           <input placeholder="Ваш E-mail" type="email" name="email">
           <button class="consultation__btn btn_border btn" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
@@ -552,7 +552,7 @@
         <div class="modal__desc">Пульсометр Polar FT1</div>
         <form action="#" class="form form_mt26">
           <input placeholder="Ваше имя" type="text" name="name">
-          <input placeholder="Ваш телефон" name="phone">
+          <input placeholder="Ваш телефон" type="tel" name="phone">
           <input placeholder="Ваш E-mail" type="email" name="email">
           <button class="consultation__btn btn_border btn" type="submit">Купить</button>
         </form>
@@ -564,7 +564,8 @@
         <div class="modal__desc">Наш менеджер свяжется с вами в ближайшее время!</div>
       </div>
     </div>
-    </div>
+
+    <a href="#up" class="pageup icon-arrow-up"></a>
   </main>
   @@include('_js.html',{})
 </body>

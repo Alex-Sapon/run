@@ -97,6 +97,51 @@ $(document).ready(function(){
 
     // Mask unput
     $('input[name=phone]').mask('+999(99) 999-99-99');
-    
+
+    // Post email
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax ({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("imput").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn();
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+    // Smooth scroll and page up
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1300) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    // $('a').on('click', function(e) {
+    //     // Make sure this.hash has a value before overriding default behavior
+    //     if (this.hash !== "") {
+    //     // Prevent default anchor click behavior
+    //     e.preventDefault();
+    //     // Store hash
+    //     let hash = this.hash;
+    //     // Using jQuery's animate() method to add smooth page scroll
+    //     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    //     $('html, body').animate({
+    //         scrollTop: $(hash).offset().top
+    //     }, 800, function(){
+    //         // Add hash (#) to URL when done scrolling (default click behavior)
+    //         window.location.hash = hash;
+    //     });
+    //     } // End if
+    // });
+
+    new WOW().init();
 });
 

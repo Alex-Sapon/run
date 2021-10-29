@@ -4,6 +4,10 @@
 // Шрифты ============================================================================
 @import 'fonts';
 
+// Animations ============================================================================
+@import 'animations';
+@import 'animate';
+
 // Шрифты ============================================================================
 $fontFamilyMS: 'MuseoSansCyrl', sans-serif;
 $fontFamilyMM: 'MuseoModerno';
@@ -28,6 +32,10 @@ $secondColor: #C70101;
 @import 'null';
 *:last-child {
     margin-bottom: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -87,3 +95,4 @@ body {
 @import 'reviews';
 @import 'footer';
 @import 'modal';
+@import 'pageup';

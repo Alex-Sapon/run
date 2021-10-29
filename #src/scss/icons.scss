@@ -10,7 +10,7 @@
     font-display: block;
   }
   
-  [class^="_icon-"], [class*=" _icon-"] {
+  [class^="icon-"], [class*=" icon-"] {
     font-family: 'icons' !important;
     // speak: never;
     font-style: normal;
@@ -23,13 +23,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  ._icon-fb:before {
+  .icon-arrow-up:before {
     content: "\e900";
   }
-  ._icon-insta:before {
+  .icon-pinter:before {
     content: "\e901";
   }
-  ._icon-pinter:before {
+  .icon-insta:before {
     content: "\e902";
   }
-  
+  .icon-fb:before {
+    content: "\e903";
+  }
